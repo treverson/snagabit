@@ -1,6 +1,1 @@
-# 99bottles
-
-The beer song in ruby!
-
-99 bottles of beer on the wall, 99 bottles of beer.
-Take one down and pass it around, 98 bottles of beer on the wall.
+BitLits.com is an in-depth showcase of how to use your Bitcoin, trade your Bitcoin and Work at Home; Work From Home, Post Micro Gigs; Micro Jobs.
