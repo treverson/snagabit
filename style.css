@@ -5,10 +5,11 @@
    v.2
 */
 
-html,
+html {
+    font-family: "Roboto", sans-serif;
+}
 body {
     background-color: #1f232b;
-    font-family: "helvetica neue";
 }
 
 .container {
@@ -26,8 +27,7 @@ body {
 .header h1 {
     margin: 0;
     padding: 0.5em 0;
-    font-family: 'Oswald', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
     text-decoration: none;
 }
@@ -38,7 +38,6 @@ body {
     box-sizing: border-box;
     background-color: #F6F6F6;
     padding: 0.1em 1em;
-    font-family: 'Lato', sans-serif;
     color: #404040;
 }
 
@@ -90,7 +89,6 @@ li a:hover {
     Tables 
 */
 table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
@@ -98,7 +96,6 @@ table {
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
-
 }
 
 
