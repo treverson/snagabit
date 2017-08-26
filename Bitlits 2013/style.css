@@ -1,0 +1,185 @@
+/* 
+   Charlie Faler
+   Justin Faler 
+   7/31/17
+   v.2
+*/
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: #1f232b;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0.5em 0;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    -webkit-box-sizing: border-box;
+    -mozbox-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #F6F6F6;
+    padding: 0.1em 1em;
+    color: #404040;
+}
+
+
+/*
+    Lists
+*/
+
+.logo-img {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #282c37;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+#footer {
+    color: #fff;
+    padding: 45px 0 0 0;
+    text-align: center;
+    line-height: normal;
+    font-size: .9em;
+    overflow: auto;
+}
+
+/*
+    Tables 
+*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+
+/*
+   Left Buy Table
+*/
+.buy {
+    width: 49%;
+    float: left;
+    padding-bottom: 15px;
+}
+
+/*
+    Right Buy Table
+*/
+.sell {
+    width: 49%;
+    float: right;
+}
+
+/*
+    Borders
+*/
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    opacity: 0.95;
+    padding-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+th {
+    background: #282c37;
+    color: white;
+}
+
+
+/*
+    Media Screen
+*/
+body {
+    margin: 0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #282c37;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+     background-color: #1f232b;
+}
+
+ul.topnav li a.active {
+     background-color: #4CAF50;
+}
+
+ul.topnav li.right {
+     float: right;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
