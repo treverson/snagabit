@@ -7,6 +7,7 @@ An open-source crypto currency exchange
 [![GitHub issues](https://img.shields.io/github/issues/Jfaler/Bitlits.svg)](https://github.com/Jfaler/Bitlits/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Jfaler/Bitlits.svg)](https://github.com/Jfaler/Bitlits/stargazers)
 
+ http://jfaler.github.io/Bitlits/
 
 ### Mission
 
