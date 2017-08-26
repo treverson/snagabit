@@ -7,8 +7,6 @@ An open-source crypto currency exchange
 [![GitHub issues](https://img.shields.io/github/issues/Jfaler/Bitlits.svg)](https://github.com/Jfaler/Bitlits/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Jfaler/Bitlits.svg)](https://github.com/Jfaler/Bitlits/stargazers)
 
-Peatio is a free and open-source crypto currency exchange implementation with the Rails framework and other cutting-edge technology.
-
 
 ### Mission
 
