@@ -68,6 +68,8 @@ You can follow this tutorial
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04
 `
 sudo apt-get -y install redis-server
+`
+`
 sudo service redis-server status
 `
 
