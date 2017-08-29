@@ -164,17 +164,19 @@ and uncomment
     
 ### 7b. Installing Nginx & Passenger if the steps above do not work. 
 
-# Install Phusion PGP Key and add HTTPS support for APT
+Install Phusion PGP Key and add HTTPS support for APT
 
     sudo apt-get install -y dirmngr gnupg
     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
     sudo apt-get install -y apt-transport-https ca-certificates
 
-# Add our APT repository
+Add Phusion Passenger APT repository
+
     sudo sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main > /etc/apt/sources.list.d/passenger.list'
     sudo apt-get update
 
-# Install Passenger + Nginx
+Install Passenger + Nginx
+
     sudo apt-get install -y nginx-extras passenger
 
 Next, we need to update the Nginx configuration to point Passenger to the version of Ruby that we're using. You'll want to open up /etc/nginx/nginx.conf in your favorite editor,
