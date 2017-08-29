@@ -14,7 +14,7 @@ Deploy production server on Ubuntu 14.04
 9. Install ImageMagick
 10. Configure Peatio
 
-### 1. Setup deploy user
+### 1. Setup deploy user (Do Not Skip This Step!)
 
 Create (if it doesn’t exist) deploy user, and assign it to the sudo group:
 
@@ -161,6 +161,43 @@ we will alsp need to enable passenger in nginx config file
 and uncomment
 
     include  /etc/nginx/passenger.conf;.
+    
+### 7b. Installing Nginx & Passenger if the steps above do not work. 
+
+# Install Phusion PGP Key and add HTTPS support for APT
+
+    sudo apt-get install -y dirmngr gnupg
+    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
+    sudo apt-get install -y apt-transport-https ca-certificates
+
+# Add our APT repository
+    sudo sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main > /etc/apt/sources.list.d/passenger.list'
+    sudo apt-get update
+
+# Install Passenger + Nginx
+    sudo apt-get install -y nginx-extras passenger
+
+Next, we need to update the Nginx configuration to point Passenger to the version of Ruby that we're using. You'll want to open up /etc/nginx/nginx.conf in your favorite editor,
+
+    sudo vim /etc/nginx/passenger.conf
+
+find the following lines, and uncomment them:
+
+    passenger_root /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini;
+    passenger_ruby /usr/bin/ruby;
+
+update the second line to read:
+
+    passenger_ruby /home/deploy/.rbenv/shims/ruby;
+
+we will alsp need to enable passenger in nginx config file
+  
+    sudo vim /etc/nginx/nginx.conf 
+
+and uncomment
+
+    include  /etc/nginx/passenger.conf;.
+
 
 ### 8. Install JavaScript Runtime
 
