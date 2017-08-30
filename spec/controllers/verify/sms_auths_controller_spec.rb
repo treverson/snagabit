@@ -26,7 +26,7 @@ module Verify
       let(:attrs) {
         {
           format: :js,
-          sms_auth: {country: 'CN', phone_number: '123-1234-1234'},
+          sms_auth: {country: 'US', phone_number: '123-123-1234'},
           commit: 'send_code'
         }
       }
@@ -61,7 +61,7 @@ module Verify
         let(:attrs) {
           {
             format: :js,
-            sms_auth: {country: 'CN', phone_number: 'wrong number'},
+            sms_auth: {country: 'US', phone_number: 'wrong number'},
             commit: 'send_code'
           }
         }
@@ -81,7 +81,7 @@ module Verify
         let(:attrs) {
           {
             format: :js,
-            sms_auth: {country: 'CN', phone_number: '133.1234.1234'},
+            sms_auth: {country: 'US', phone_number: '133.123.1234'},
             commit: 'send_code'
           }
         }
